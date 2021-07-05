@@ -1,42 +1,46 @@
-    body {
-        margin: 0;
-    }
-    
-    html {
-        /* Base font-size for 'rem' */
-        font-size: 16px;
-    }
-    
-    .wallpaper {
-        background-image: url('1.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        height: 100vh;
-    }
-    
-    .header {
-        background-color: rgba(0, 0, 0, 0);
-        height: 100%;
-        width: 500px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        /*главная ось*/
-        align-items: center;
-        /*второстепенная ось*/
-        text-align: center;
-        color: white;
-        font-family: 'Montserrat', sans-serif;
-        padding: 2rem;
-    }
-    
-    .header h1 {
-        font-size: 3rem;
-        font-weight: 300;
-    }
-    
-    .header h3 {
-        font-size: 1.5rem;
-        font-weight: 600;
-    }
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+        }
+        
+        html {
+            /* Base font-size for 'rem' */
+            font-size: 16px;
+        }
+        
+        .wallpaper {
+            background-image: url('1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+        
+        .header {
+            background-color: rgba(0, 0, 0, 0);
+            height: 100%;
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /*главная ось*/
+            align-items: center;
+            /*второстепенная ось*/
+            text-align: center;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            padding: 2rem;
+        }
+        
+        .header h1 {
+            font-size: 3rem;
+            font-weight: 300;
+        }
+        
+        .header h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
