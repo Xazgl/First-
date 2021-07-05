@@ -1,96 +1,101 @@
-            * {
-                box-sizing: border-box;
-                /* работает на все эелементы */
-            }
-            
-            body {
-                margin: 0;
-            }
-            
-            html {
-                /* Base font-size for 'rem' */
-                font-size: 16px;
-            }
-            
-            .wallpaper {
-                background-image: url('1.jpg');
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center;
-                height: 100vh;
-            }
-            
-            .header {
-                background-color: rgba(0, 0, 0, 0);
-                height: 100%;
-                width: 500px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                /*главная ось*/
-                align-items: center;
-                /*второстепенная ось*/
-                text-align: center;
-                color: white;
-                font-family: 'Montserrat', sans-serif;
-                padding: 2rem;
-            }
-            
-            .header h1 {
-                font-size: 3rem;
-                font-weight: 300;
-            }
-            
-            .header h3 {
-                font-size: 1.5rem;
-                font-weight: 600;
-            }
-            /* оптимизация под мобилу */
-            
-            @media(max-width:350px) and (orientation: portrait) {
-                .header h1 {
-                    font-size: 2.5rem;
-                }
-                .header h3 {
-                    font-size: 1.2rem;
-                }
-            }
-            
-            @media(max-width:600px) and (orientation:landscape) {
-                .header h1 {
-                    font-size: 2.5rem;
-                }
-                .header h3 {
-                    font-size: 1.2rem;
-                }
-            }
-            
-            .order {
-                height: 100vh;
-                position: relative;
-            }
-            
-            .order-background {
-                background: no-repeat url(10.jpg);
-                background-size: cover;
-                background-position: center;
-                height: 100%;
-            }
-            
-            .order-info {
-                /*1 способ */
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                margin: auto;
-                width: 200px;
-                height: 50px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center
-                /*2 способ
+                    * {
+                        box-sizing: border-box;
+                        font-family: 'Montserrat', sans-serif
+                        /* работает на все эелементы */
+                    }
+                    
+                    body {
+                        margin: 0;
+                    }
+                    
+                    html {
+                        /* Base font-size for 'rem' */
+                        font-size: 16px;
+                    }
+                    
+                    .wallpaper {
+                        background-image: url('1.jpg');
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center;
+                        height: 100vh;
+                    }
+                    
+                    .header {
+                        background-color: rgba(0, 0, 0, 0);
+                        height: 100%;
+                        width: 500px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        /*главная ось*/
+                        align-items: center;
+                        /*второстепенная ось*/
+                        text-align: center;
+                        color: white;
+                        font-family: 'Montserrat', sans-serif;
+                        padding: 2rem;
+                    }
+                    
+                    .header h1 {
+                        font-size: 3rem;
+                        font-weight: 300;
+                    }
+                    
+                    .header h3 {
+                        font-size: 1.5rem;
+                        font-weight: 600;
+                    }
+                    /* оптимизация под мобилу */
+                    
+                    @media(max-width:350px) and (orientation: portrait) {
+                        .header h1 {
+                            font-size: 2.5rem;
+                        }
+                        .header h3 {
+                            font-size: 1.2rem;
+                        }
+                    }
+                    
+                    @media(max-width:600px) and (orientation:landscape) {
+                        .header h1 {
+                            font-size: 2.5rem;
+                        }
+                        .header h3 {
+                            font-size: 1.2rem;
+                        }
+                    }
+                    
+                    .order {
+                        height: 100vh;
+                        position: relative;
+                    }
+                    
+                    .order-background {
+                        background: no-repeat url(10.jpg);
+                        background-size: cover;
+                        background-position: center;
+                        height: 100%;
+                    }
+                    
+                    .order-info {
+                        /*1 способ */
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        margin: auto;
+                        width: 200px;
+                        height: 50px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        color: white;
+                        font-family: 'Montserrat', sans-serif;
+                        z-index: 99999;
+                        /*z-index: 1-определяет порядок слоев*/
+                        /*2 способ
                 position: absolute;
                 top: 0;
                 bottom: 0;
@@ -99,9 +104,38 @@
                 margin: auto;
                 width: 200px;
                 height: 50px;*/
-                /* 3 способ
+                        /* 3 способ
                 position: absolute;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%); */
-            }
+                    }
+                    
+                    .order-mask {
+                        background-color: rgba(0, 0, 0, 0.4);
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        z-index: 2;
+                    }
+                    
+                    .order-button {
+                        height: 3rem;
+                        font-size: 1.2rem;
+                        border: 0;
+                        border-radius: 5px;
+                        background: linear-gradient(45deg, brown, yellow);
+                        color: white;
+                        cursor: pointer;
+                    }
+                    
+                    .order-button:hover {
+                        background: linear-gradient(45deg, rgb(105, 36, 36), rgb(136, 136, 13));
+                    }
+                    
+                    .order-button:active {
+                        box-shadow: 0 0 0 0.25rem, rgb(223, 50, 27);
+                    }
