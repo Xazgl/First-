@@ -4,3 +4,16 @@ width:150px;
 height:100px;
 border-radius: 50%;
 }
+
+
+
+
+
+
+.Picture
+{
+background-size:cover;
+Height:100vh;
+background-position:center;
+background:no-repeat url();
+}
