@@ -66,17 +66,3 @@ html {
         font-size: 1.2rem;
     }
 }
-
-.order {
-    height: 100vh;
-}
-
-.order-background {
-    background: no-repeat url(10.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-}
-
-
-}
