@@ -1,141 +1,286 @@
-                    * {
-                        box-sizing: border-box;
-                        font-family: 'Montserrat', sans-serif
-                        /* работает на все эелементы */
-                    }
-                    
-                    body {
-                        margin: 0;
-                    }
-                    
-                    html {
-                        /* Base font-size for 'rem' */
-                        font-size: 16px;
-                    }
-                    
-                    .wallpaper {
-                        background-image: url('1.jpg');
-                        background-repeat: no-repeat;
-                        background-size: cover;
-                        background-position: center;
-                        height: 100vh;
-                    }
-                    
-                    .header {
-                        background-color: rgba(0, 0, 0, 0);
-                        height: 100%;
-                        width: 500px;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        /*главная ось*/
-                        align-items: center;
-                        /*второстепенная ось*/
-                        text-align: center;
-                        color: white;
-                        font-family: 'Montserrat', sans-serif;
-                        padding: 2rem;
-                    }
-                    
+                * {
+                    box-sizing: border-box;
+                    font-family: 'Montserrat', sans-serif
+                    /* работает на все эелементы */
+                }
+                
+                body {
+                    margin: 0;
+                }
+                
+                html {
+                    /* Base font-size for 'rem' */
+                    font-size: 16px;
+                }
+                
+                .wallpaper {
+                    background-image: url('1.jpg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    height: 100vh;
+                }
+                
+                .header {
+                    background-color: rgba(0, 0, 0, 0);
+                    height: 100%;
+                    width: 500px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    /*главная ось*/
+                    align-items: center;
+                    /*второстепенная ось*/
+                    text-align: center;
+                    color: white;
+                    font-family: 'Montserrat', sans-serif;
+                    padding: 2rem;
+                }
+                
+                .header h1 {
+                    font-size: 3rem;
+                    font-weight: 300;
+                }
+                
+                .header h3 {
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                }
+                /* оптимизация под мобилу */
+                
+                @media(max-width:350px) and (orientation: portrait) {
                     .header h1 {
-                        font-size: 3rem;
-                        font-weight: 300;
+                        font-size: 2.5rem;
                     }
-                    
                     .header h3 {
-                        font-size: 1.5rem;
-                        font-weight: 600;
-                    }
-                    /* оптимизация под мобилу */
-                    
-                    @media(max-width:350px) and (orientation: portrait) {
-                        .header h1 {
-                            font-size: 2.5rem;
-                        }
-                        .header h3 {
-                            font-size: 1.2rem;
-                        }
-                    }
-                    
-                    @media(max-width:600px) and (orientation:landscape) {
-                        .header h1 {
-                            font-size: 2.5rem;
-                        }
-                        .header h3 {
-                            font-size: 1.2rem;
-                        }
-                    }
-                    
-                    .order {
-                        height: 100vh;
-                        position: relative;
-                    }
-                    
-                    .order-background {
-                        background: no-repeat url(10.jpg);
-                        background-size: cover;
-                        background-position: center;
-                        height: 100%;
-                    }
-                    
-                    .order-info {
-                        /*1 способ */
-                        position: absolute;
-                        top: 0;
-                        bottom: 0;
-                        left: 0;
-                        right: 0;
-                        margin: auto;
-                        width: 200px;
-                        height: 50px;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        color: white;
-                        font-family: 'Montserrat', sans-serif;
-                        z-index: 99999;
-                        /*z-index: 1-определяет порядок слоев*/
-                        /*2 способ
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                margin: auto;
-                width: 200px;
-                height: 50px;*/
-                        /* 3 способ
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%); */
-                    }
-                    
-                    .order-mask {
-                        background-color: rgba(0, 0, 0, 0.4);
-                        height: 100%;
-                        position: absolute;
-                        top: 0;
-                        bottom: 0;
-                        left: 0;
-                        right: 0;
-                        z-index: 2;
-                    }
-                    
-                    .order-button {
-                        height: 3rem;
                         font-size: 1.2rem;
-                        border: 0;
-                        border-radius: 5px;
-                        background: linear-gradient(45deg, brown, yellow);
-                        color: white;
-                        cursor: pointer;
                     }
-                    
-                    .order-button:hover {
-                        background: linear-gradient(45deg, rgb(105, 36, 36), rgb(136, 136, 13));
+                }
+                
+                @media(max-width:600px) and (orientation:landscape) {
+                    .header h1 {
+                        font-size: 2.5rem;
                     }
-                    
-                    .order-button:active {
-                        box-shadow: 0 0 0 0.25rem, rgb(223, 50, 27);
+                    .header h3 {
+                        font-size: 1.2rem;
                     }
+                }
+                
+                .order {
+                    height: 100vh;
+                    position: relative;
+                }
+                
+                .order-background {
+                    background: no-repeat url(10.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    height: 100%;
+                }
+                
+                .order-info {
+                    /*1 способ */
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    width: 200px;
+                    height: 50px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    color: white;
+                    font-family: 'Montserrat', sans-serif;
+                    z-index: 99999;
+                    /*z-index: 1-определяет порядок слоев*/
+                    /*2 способ
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+width: 200px;
+height: 50px;*/
+                    /* 3 способ
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%); */
+                }
+                
+                .order-mask {
+                    background-color: rgba(0, 0, 0, 0.4);
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    z-index: 2;
+                }
+                
+                .order-button {
+                    height: 3rem;
+                    font-size: 1.2rem;
+                    border: 0;
+                    border-radius: 5px;
+                    background: linear-gradient(45deg, brown, yellow);
+                    color: white;
+                    cursor: pointer;
+                    transition: all.5s;
+                    position: relative;
+                }
+                
+                .order-button:after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    background-color: rgba(0, 0, 0, 0);
+                    transition: all .5s;
+                }
+                
+                .order-button:hover::before {
+                    content: attr(data-name);
+                    position: relative;
+                    z-index: 1000;
+                }
+                
+                .order-button:hover:active {
+                    box-shadow: 0 0 0 0.25rem, rgba(83, 83, 253);
+                }
+                
+                .order-button-anim {
+                    margin-top: 1rem;
+                    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+                    height: 3rem;
+                    font-size: 1.2rem;
+                    border: 0;
+                    border-radius: 5px;
+                    color: white;
+                    cursor: pointer;
+                    transition: all.5s;
+                    background-size: 150% 150%;
+                    /* background-position: 0% 50%;*первый вариант анимации*/
+                    animation: out .5s ease forwards;
+                }
+                
+                .order-button-anim:hover {
+                    /* background-position: 100% 50%; *первый вариант*/
+                    animation: in .5s ease forwards;
+                    /*infinity -бесконеный фон */
+                }
+                
+                @keyframes in {
+                    0% {
+                        background-position: 0% 50%;
+                    }
+                    50% {
+                        background-position: 100% 50%;
+                    }
+                    100% {
+                        background-position: 0% 50%;
+                    }
+                }
+                
+                @keyframes out {
+                    from {
+                        background-position: 100% 50%;
+                    }
+                    to {
+                        background-position: 50% 0%;
+                    }
+                }
+                
+                .container-span {
+                    position: absolute;
+                    margin-bottom: 25rem;
+                    margin-right: 10rem;
+                    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+                    height: 300px;
+                    width: 300px;
+                    z-index: 2000;
+                    background-size: 400% 400%;
+                    animation: in 30s infinite;
+                }
+                
+                .order-new {
+                    height: 100vh;
+                    position: relative;
+                }
+                
+                .new-background {
+                    display: flex;
+                    position: relative;
+                    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+                    background-size: 400% 400%;
+                    background-size: cover;
+                    background-position: center;
+                    height: 100vh;
+                    animation: back 20s ease infinite;
+                }
+                
+                @keyframes gradient {
+                    0% {
+                        background-position: 0% 50%;
+                    }
+                    50% {
+                        background-position: 100% 50%;
+                    }
+                    100% {
+                        background-position: 0% 50%;
+                    }
+                }
+                
+                .gradient {
+                    height: 100vh;
+                    width: 100%;
+                    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+                    background-size: 400% 400%;
+                    animation: gradient 15s ease infinite;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                
+                .content {
+                    text-align: center;
+                }
+                
+                .content-h1 {
+                    color: white;
+                    font-size: 2rem;
+                }
+                
+                .button-new:first-of-type {
+                    border-radius: 4px 0 0 4px;
+                }
+                
+                .button-new {
+                    height: 2rem;
+                    width: 16rem;
+                    border: 1px white;
+                    border-radius: 5px;
+                    background-color: transparent;
+                    cursor: pointer;
+                    color: white;
+                }
+                
+                .button-new:hover {
+                    height: 3rem;
+                    font-size: 1.2rem;
+                    width: 11rem;
+                    border: 0;
+                    border-radius: 5px;
+                    background-color: white;
+                    border: 2px solid transparent;
+                    color: black;
+                    cursor: pointer;
+                    transition: all.5s;
+                    position: relative
+                }
