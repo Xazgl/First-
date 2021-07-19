@@ -39,9 +39,15 @@ console.log (objectVar.key1) //выводит ключ 1
 function helloFunction(congrat) {    //функция в () передаются параметры
 return congrat + ' from function'
 }
-console.log(helloFunction('Hello')) // строка Hello+выше
+/*console.log(helloFunction('Hello')) // строка Hello+выше
 console.logе(typeof helloFunction)   // функция
-console.logе(typeof helloFunction('Hello'))   // тут подает результат выполнения фунцкции, ее результат return подставляется 
+console.logе(typeof helloFunction('Hello'))   // тут подает результат выполнения фунцкции, ее результат return подставляется */
+
+function helloUser(congrat,name) {
+return congrat + ','+ name }
+console.log (helloUser('Hello','John'))
+console.log (helloUser('Hello','AL'))
+
 
 
 
