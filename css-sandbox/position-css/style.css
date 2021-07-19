@@ -284,3 +284,10 @@ transform: translate(-50%, -50%); */
                     transition: all.5s;
                     position: relative
                 }
+
+
+                .custom-style {
+                    width:attr(data-width);
+                    height:attr(data-height);
+                    color:attr(data-color);
+                }
