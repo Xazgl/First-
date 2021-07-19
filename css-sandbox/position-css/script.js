@@ -6,13 +6,13 @@ const hello3 = 'Hello world 3!'
 //alert('Hello world!')
 //} 
 
-console.log(hello)
-console.log(hello2)
-console.log(hello3)
+//console.log(hello)
+//console.log(hello2)
+//console.log(hello3)
 
 //типы данных
-
-let stringVar='Some string'//строка
+.
+/*let stringVar='Some string'//строка
 console.log (typeof stringVar) //выводит тип данных (выше) в консоль 
 
 let numberVar= 2134.3435//число
@@ -25,7 +25,7 @@ let underfinedVar //=undefined  //тип данных не объявлен мо
 console.log (typeof underfinedVar )//выводит тип данных (выше) в консоль 
 
 let nillVar= null // 
-console.log (typeof nillVar)//выводит тип данных (выше) в консоль 
+console.log (typeof nillVar)//выводит тип данных (выше) в консоль */
 
 let objectVar= { 
 key1:'Value 1',
@@ -34,6 +34,21 @@ key2:'Value 2'
 
 console.log (typeof objectVar) //выводит тип данных (выше) в консоль 
 console.log (objectVar.key1) //выводит ключ 1
+
+
+function helloFunction(congrat) {    //функция в () передаются параметры
+return congrat + ' from function'
+}
+console.log(helloFunction('Hello')) // строка Hello+выше
+console.logе(typeof helloFunction)   // функция
+console.logе(typeof helloFunction('Hello'))   // тут подает результат выполнения фунцкции, ее результат return подставляется 
+
+
+
+
+
+
+
 
 let header = document.getElementById('.header')//считали эелемент по id и присвоили переменную,справа на лево//
 header.textContent= "Привет" //меняем название, либо вставляем hello3 //
