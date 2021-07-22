@@ -32,7 +32,7 @@ key1:'Value 1',
 key2:'Value 2'
 } // создали объект 
 
-console.log (typeof objectVar) //выводит тип данных (выше) в консоль 
+console.log (typeof objectVar) //выводит тип данных (выше) в консолgit ь 
 console.log (objectVar.key1) //выводит ключ 1
 
 
