@@ -27,26 +27,27 @@ console.log (typeof underfinedVar )//выводит тип данных (выш�
 let nillVar= null // 
 console.log (typeof nillVar)//выводит тип данных (выше) в консоль */
 
-let objectVar= { 
-key1:'Value 1',
-key2:'Value 2'
+let objectVar = {
+    key1: 'Value 1',
+    key2: 'Value 2'
 } // создали объект 
 
-console.log (typeof objectVar) //выводит тип данных (выше) в консоль git  
-console.log (objectVar.key1) //выводит ключ 1
+console.log(typeof objectVar) //выводит тип данных (выше) в консоль git  
+console.log(objectVar.key1) //выводит ключ 1
 
 
 function helloFunction(congrat) {    //функция в () передаются параметры
-return congrat + ' from function'
+    return congrat + ' from function'
 }
 /*console.log(helloFunction('Hello')) // строка Hello+выше
 console.logе(typeof helloFunction)   // функция
 console.logе(typeof helloFunction('Hello'))   // тут подает результат выполнения фунцкции, ее результат return подставляется */
 
-function helloUser(congrat,name) {
-return congrat + ','+ name }
-console.log (helloUser('Hello','John'))
-console.log (helloUser('Hello','AL'))
+function helloUser(congrat, name) {
+    return congrat + ',' + name
+}
+console.log(helloUser('Hello', 'John'))
+console.log(helloUser('Hello', 'AL'))
 
 
 
@@ -63,13 +64,13 @@ let header = document.getElementById('.header')//считали эелемент
 
 
 
-function testFunc(arg1, arg2,arg3) {
-    console.log (arg1);
-    console.log (arg2);
-    console.log (arg3);
+function testFunc(arg1, arg2, arg3) {
+    console.log(arg1);
+    console.log(arg2);
+    console.log(arg3);
 }
 
-testFunc(1,2)
+testFunc(1, 2)
 
 
 /*testFunc2(1,2)
@@ -81,14 +82,14 @@ let testFunc2 =function(arg1, arg2,arg3) {
     return 'testFunc2'
 }*/
 
-testFuncname('Андрей','Сидоров')
+/*testFuncname('Андрей', 'Сидоров')
 function testFuncname(arg1, arg2) {
-  
-   return arg1+' '+arg2
-}
-console.log (testFuncname('Андрей','Сидоров')); /*нужны скобки что разюить и сложить результат*/
 
- /*
+    return arg1 + ' ' + arg2
+}
+console.log(testFuncname('Андрей', 'Сидоров')); нужны скобки что разюить и сложить результат*/
+
+/*
 let num= 0 
 let clickBtn=document.getElementById('click')
 clickBtn.onclick = function() {
@@ -97,9 +98,54 @@ clickBtn.onclick = function() {
 console.log('Click nums: '+num);
 }*/
 
-let userInput=document.getElementById('username')
+
+
+/*let userInput = document.getElementById('username')
+let userInput2 = document.getElementById('username2')
+let header2= document.getElementById('header2')
+let clickBtn = document.getElementById('click')
+clickBtn.onclick = function () {
+    let username = userInput.value
+    let username2 = userInput2.value
+    header2.textContent=('Hello, ' + username.toUpperCase() + ' ' + username2.toUpperCase());
+}фамиля и имя */ 
+ 
+
+
+/*let num= 0 
 let clickBtn=document.getElementById('click')
+let header2= document.getElementById('header2')
 clickBtn.onclick = function() {
-let username = userInput.value
-console.log('Hello, ' + username); 
-}
+num=(num+1) 
+//num=(num +10) или num +=10
+header2.textContent=('Click nums: '+num);
+} кликер*/ 
+
+/*let header2 = document.createElement('h2')
+let userInput = document.getElementById('username')
+let clickBtn = document.getElementById('click')
+clickBtn.parentElement.append(header2)
+   clickBtn.onclick = function () {
+     let username = userInput.value
+     header2.textContent= username.toUpperCase() }  выводит динамический элемент*/ 
+
+
+let section = document.getElementById('section3')
+let div = document.createElement('div')
+let button = document.createElement('button')
+let input  = document.createElement('input')
+
+
+   section.append(div) 
+   div.append(button) 
+   div.append(input)
+
+   button.textContent='Click'
+   input.type = 'text' 
+   input.style.marginRight = '20px'
+   input.style.borderStyle = 'solid'
+   input.style.borderWidth='3px'
+   div.className = 'form'
+  
+
+
