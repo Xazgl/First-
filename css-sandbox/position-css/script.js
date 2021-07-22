@@ -11,7 +11,7 @@ const hello3 = 'Hello world 3!'
 //console.log(hello3)
 
 //типы данных
-.
+
 /*let stringVar='Some string'//строка
 console.log (typeof stringVar) //выводит тип данных (выше) в консоль 
 
@@ -32,7 +32,7 @@ key1:'Value 1',
 key2:'Value 2'
 } // создали объект 
 
-console.log (typeof objectVar) //выводит тип данных (выше) в консолgit ь 
+console.log (typeof objectVar) //выводит тип данных (выше) в консоль git  
 console.log (objectVar.key1) //выводит ключ 1
 
 
@@ -57,4 +57,49 @@ console.log (helloUser('Hello','AL'))
 
 
 let header = document.getElementById('.header')//считали эелемент по id и присвоили переменную,справа на лево//
-header.textContent= "Привет" //меняем название, либо вставляем hello3 //
+/*header.textContent= "Привет" //меняем название, либо вставляем hello3 */
+
+
+
+
+
+function testFunc(arg1, arg2,arg3) {
+    console.log (arg1);
+    console.log (arg2);
+    console.log (arg3);
+}
+
+testFunc(1,2)
+
+
+/*testFunc2(1,2)
+
+let testFunc2 =function(arg1, arg2,arg3) {
+    console.log (arg1);
+    console.log (arg2);
+    console.log (arg3);
+    return 'testFunc2'
+}*/
+
+testFuncname('Андрей','Сидоров')
+function testFuncname(arg1, arg2) {
+  
+   return arg1+' '+arg2
+}
+console.log (testFuncname('Андрей','Сидоров')); /*нужны скобки что разюить и сложить результат*/
+
+ /*
+let num= 0 
+let clickBtn=document.getElementById('click')
+clickBtn.onclick = function() {
+//num=(num+1) 
+//num=(num +10) или num +=10
+console.log('Click nums: '+num);
+}*/
+
+let userInput=document.getElementById('username')
+let clickBtn=document.getElementById('click')
+clickBtn.onclick = function() {
+let username = userInput.value
+console.log('Hello, ' + username); 
+}
